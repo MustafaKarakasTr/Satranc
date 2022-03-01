@@ -1,4 +1,4 @@
-
+package satranc;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -68,50 +68,50 @@ public class Frame implements ActionListener{
 				else{
 					if(table[i][j] instanceof Piyon){
 						if(!table[i][j].beyaz_mi)
-							icon = new ImageIcon("piyons.png");
+							icon = new ImageIcon("images/piyonS.PNG");
 						else
-							icon = new ImageIcon("piyon.PNG");
+							icon = new ImageIcon("images/piyon.PNG");
 						buttons[i][j] =new JButton(icon);
 					}
 					else if(table[i][j] instanceof Kale){
 						if(!table[i][j].beyaz_mi)
-							icon = new ImageIcon("kales.png");
+							icon = new ImageIcon("images/KaleS.PNG");
 						else
-							icon = new ImageIcon("kale.PNG");
+							icon = new ImageIcon("images/kale.PNG");
 						buttons[i][j] =new JButton(icon);
 					
 					}
 					else if(table[i][j] instanceof Vezir){ // vezir should be checked before fil
 						if(!table[i][j].beyaz_mi)
-							icon = new ImageIcon("vezirs.png");
+							icon = new ImageIcon("images/vezirS.png");
 						else
-							icon = new ImageIcon("vezir.png");
+							icon = new ImageIcon("images/vezir.png");
 						buttons[i][j] =new JButton(icon);
 					
 					}
 					else if(table[i][j] instanceof At){
 						if(!table[i][j].beyaz_mi)
-							icon = new ImageIcon("Ats.png");
+							icon = new ImageIcon("images/atS.png");
 						else
-							icon = new ImageIcon("At.png");
+							icon = new ImageIcon("images/at.png");
 						buttons[i][j] =new JButton(icon);
 					
 					}
 					else if(table[i][j] instanceof Fil){
 						if(!table[i][j].beyaz_mi)
-							icon = new ImageIcon("fils.png");
+							icon = new ImageIcon("images/filS.png");
 						else
-							icon = new ImageIcon("fil.png");
+							icon = new ImageIcon("images/fil.png");
 						buttons[i][j] =new JButton(icon);
 					
 					}
 					if(table[i][j] instanceof Sah){
 						if(!table[i][j].beyaz_mi){
-							icon = new ImageIcon("sahs.png");
+							icon = new ImageIcon("images/sahS.png");
 							siyahSah = table[i][j];
 						}
 						else{
-							icon = new ImageIcon("sah.png");
+							icon = new ImageIcon("images/sah.png");
 							beyazSah = table[i][j];
 						}
 						buttons[i][j] =new JButton(icon);
@@ -127,7 +127,7 @@ public class Frame implements ActionListener{
 		int counterForColor=0;
 		for(int i=0;i<8;i++){
 			for(int j=0;j<8;j++){
-				buttons[i][j].setBounds(x,y,70,100);
+				buttons[i][j].setBounds(x,y,100,100);
 				buttons[i][j].addActionListener(this);
 				buttons[i][j].setFocusable(false);
 				buttons[i][j].setFont(new Font("Comic Sans",Font.BOLD,20));
@@ -136,7 +136,7 @@ public class Frame implements ActionListener{
 				else 
 					buttons[i][j].setBackground(defaultColor2);
 				counterForColor++;
-				x+=70;
+				x+=100;
 			}
 			counterForColor++;
 			y+=100;
@@ -146,7 +146,7 @@ public class Frame implements ActionListener{
 	
 		frame = new JFrame("Chess");
 		//frame.setSize(new Dimension((_size*50) + (_size*25)+ 500,_size*50+300));
-		frame.setSize(new Dimension(600,800));
+		frame.setSize(new Dimension(800,830));
         
         //undoButton.setBounds((_size*50) + (_size*25)+ 500,100,50,50);
 		

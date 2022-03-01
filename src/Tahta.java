@@ -1,3 +1,4 @@
+package satranc;
 public class Tahta {
     Tas[] beyaz_takim=new Tas[16];
     Tas[] siyah_takim=new Tas[16];

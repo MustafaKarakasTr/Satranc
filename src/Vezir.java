@@ -1,3 +1,4 @@
+package satranc;
 public class Vezir extends Fil {
     Vezir(int _x,int _y,boolean _beyaz_mi){
         super(_x,_y,_beyaz_mi);// koordinatlarını koyar

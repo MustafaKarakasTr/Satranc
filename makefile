@@ -1,3 +1,3 @@
 sat:
-	javac *.java
-	java main
+	javac -d . src/*.java
+	java satranc/main

@@ -1,3 +1,4 @@
+package satranc;
 public class At extends Tas{
     At(int _x,int _y,boolean _beyaz_mi){
         super(_x,_y,_beyaz_mi);// koordinatlarını koyar

@@ -1,3 +1,4 @@
+package satranc;
 public abstract class Tas{
     protected int x,y;
      abstract int[][] koordinatlar(Tas[][] tahta);

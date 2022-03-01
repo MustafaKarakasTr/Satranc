@@ -1,3 +1,4 @@
+package satranc;
 public class Sah extends Tas {
     Sah(int _x,int _y,boolean _beyaz_mi){
         super(_x,_y,_beyaz_mi);// koordinatlarını koyar
